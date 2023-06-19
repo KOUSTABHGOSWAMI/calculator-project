@@ -51,7 +51,7 @@ document.addEventListener("keypress", function(event) {
         operator = value;
         operand1 = parseFloat(display.innerText);
         display.innerText = null;
-    } else if (key == '13') {
+    } else if (key == '13') {  //13 is the keycode for Enter
         if (operator != null) {
             operand2 = parseFloat(display.innerText);
             display.innerText = eval(operand1 + " " + operator + " " + operand2);
@@ -70,7 +70,7 @@ document.addEventListener("keydown", function(event) {
     var key;
     key = event.keyCode;
 
-    if (key == '8') {
+    if (key == '8') {   //8 is the key code for backspace
         display.innerText = null;
     }
 });
