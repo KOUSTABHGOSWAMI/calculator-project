@@ -1,0 +1,76 @@
+body {
+    color: white;
+}
+
+#outer-div {
+    height: 50%;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 15%;
+    padding: 5px;
+    background-color: rgb(6, 6, 58);
+}
+
+#cal-block {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: rgb(150, 150, 215);
+    margin: 3px;
+}
+
+#cal-block h3 {
+    font-size: 1.6rem;
+}
+
+#button-group {
+    background-color: rgb(192, 188, 184);
+}
+
+#button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    margin-left: 9.5%;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: rgb(216, 207, 207);
+    margin: 6px;
+    height: 70px;
+    width: 22%;
+    box-shadow: 0px 0px 5px 2px rgb(160, 157, 157);
+    border: 2px solid green
+}
+
+.button span {
+    font-size: 1.8rem;
+    margin-bottom: -10%;
+    margin-left: 38%;
+    color: black;
+}
+
+#cal-display {
+    height: 70px;
+    margin: 6px;
+    background-color: rgb(247, 238, 238);
+}
+
+#display {
+    height: 67px;
+    width: 99%;
+    border: 2px solid yellow;
+    margin-top: -0.5px;
+    color: rgb(25, 25, 34);
+    font-size: 2.5rem;
+}
+
+#zero {
+    width: 40%;
+}
+
+#zero span {
+    margin-left: 44%;
+}
