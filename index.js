@@ -1,14 +1,15 @@
+//getting the display bar and all the buttons
 var display = document.getElementById("display");
 var buttons = document.getElementsByClassName("button");
 var operand1 = 0;
 var operand2 = null;
 var operator = null;
 
-
+//adding eventlistener on click
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
         var value = this.getAttribute('data-value');
-
+//setting operator for every buton clicks
         if (value == 'AC') {
             display.innerText = null;
         } else if (value == '+' || value == '-' || value == "*" || value == "/" || value == "%") {
@@ -35,9 +36,10 @@ for (var i = 0; i < buttons.length; i++) {
     });
 }
 
-
+//handling keyboard events
 document.addEventListener("keypress", function(event) {
     var key;
+    //getting the key 
     key = event.keyCode;
     value = String.fromCharCode(key);
     console.log(key + " " + value);
